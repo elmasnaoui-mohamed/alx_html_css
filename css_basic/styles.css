@@ -1,0 +1,28 @@
+body.works_on_smartphone {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article, aside {
+    width: 100%;
+    flex: none;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    article {
+        flex: 2;
+    }
+
+    aside {
+        flex: 1;
+    }
+}
