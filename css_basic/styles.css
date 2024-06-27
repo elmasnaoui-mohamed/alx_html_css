@@ -1,28 +1,52 @@
-body.works_on_smartphone {
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 main {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    flex-direction: row;
 }
 
-article, aside {
-    width: 100%;
+header, footer {
     flex: none;
+    padding: 10px;
+    border: 1px solid #dddddd;
 }
 
-@media (min-width: 768px) {
-    main {
-        flex-direction: row;
-    }
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 10px;
+    border-left: 1px solid #dddddd;
+}
 
-    article {
-        flex: 2;
-    }
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-top: 0;
+    border-bottom: 0;
+}
 
-    aside {
-        flex: 1;
-    }
+main, body {
+    min-height: 0;
+    min-width: 0;
+}
+
+code{
+    color: rgb(199, 37, 78);
+    background-color: rgb(249, 242, 244);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 90%;
 }
