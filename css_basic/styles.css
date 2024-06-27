@@ -68,10 +68,6 @@ code{
         border: 1px solid #dddddd;
         padding: 5px;
     }
-    article {
-        flex: 1;
-        margin-bottom: 5px;
-    }
 
     header {
         margin-bottom: 5px;
