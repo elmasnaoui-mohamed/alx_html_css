@@ -300,7 +300,9 @@ section.membership > div h3{
 section.membership > div p{
     font-size: 14px;
     font-weight: 500;
+    margin: auto;
     margin-block: 0;
+    width: 200px;
 }
 section.membership button{
     text-align: center;
