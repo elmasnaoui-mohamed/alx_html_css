@@ -339,7 +339,8 @@ section.FAQ .FAQ_cards_container{
     gap: 74px 220px;
 }
 section.FAQ .FAQ_cards_container .FAQ_card{
-    width: 350px;
+    width: calc(50% - 220px);
+    min-width: 350px;
 }
 section.FAQ .FAQ_cards_container .FAQ_card h3{
     font-size: 16px;
