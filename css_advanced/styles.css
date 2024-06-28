@@ -60,7 +60,7 @@ section.banner{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding-block: 100px;
 }
 section.banner div:first-child h1{
     font-size: 120px;
