@@ -353,3 +353,46 @@ section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
     color: #0716297c;
 }
 /* ============================ end FAQ sectoin styles =============================== */
+/* ============================ start Footer sectoin styles =============================== */
+footer{
+    background-color: #071629;
+    padding-block: 95px 39px;
+    height: 249px;
+}
+footer section{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+footer section > div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+footer section > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+footer section > div > div i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #071629;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px;
+}
+footer section > p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* ============================ end Footer sectoin styles =============================== */
