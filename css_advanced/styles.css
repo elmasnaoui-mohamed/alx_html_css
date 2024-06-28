@@ -95,8 +95,10 @@ section.banner div:first-child button{
     height: 44px;
     border-radius: 30px;
     font-weight: 600;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+section.banner div:first-child button:hover{
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
 }
 section.banner div:last-child h2{
     font-size: 32px;
@@ -241,3 +243,61 @@ section.videos_list > div> p:last-child {
     margin: 5px 0 10px;
 }
 /* ============================ end Videos list sectoin styles =============================== */
+/* ============================ start membership  sectoin styles =============================== */
+.membership{
+    background-color: #071629;
+    color: #fff ;
+    padding-block: 87px;
+    height: 502px;
+    min-height: max-content;
+}
+.membership h2{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 58px;
+}
+.membership h2 span{
+    font-weight: 700;
+    color: #C271FF;
+}
+.membership .membership_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.membership .membership_cards div{
+    width: 257px;
+    height: 153px;
+    margin-right: 30px;
+    text-align: center;
+}
+.membership > div h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-block: 20px;
+}
+.membership > div p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-block: 0;
+}
+section.membership button{
+    text-align: center;
+    background: #C271FF;
+    border: 0;
+    color: #fff;
+    width: 162px;
+    font-size: 14px;
+    height: 44px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+section.membership button:hover{
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+}
+/* ============================ end membership sectoin styles =============================== */
