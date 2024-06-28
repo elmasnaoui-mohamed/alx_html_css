@@ -346,13 +346,16 @@ section.FAQ .FAQ_cards_container .FAQ_card h3{
     font-size: 16px;
     font-weight: 700;
     color: #071629;
+    margin: auto;
     margin-bottom: 30px;
+    width: 350px;
 }
 section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
     font-size: 14px;
     font-weight: 500;
     color: #0716297c;
     width: 350px;
+    margin: auto;
 }
 /* ============================ end FAQ sectoin styles =============================== */
 /* ============================ start Footer sectoin styles =============================== */
