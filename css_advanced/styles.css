@@ -352,6 +352,7 @@ section.FAQ .FAQ_cards_container .FAQ_card > div:last-child{
     font-size: 14px;
     font-weight: 500;
     color: #0716297c;
+    width: 350px;
 }
 /* ============================ end FAQ sectoin styles =============================== */
 /* ============================ start Footer sectoin styles =============================== */
