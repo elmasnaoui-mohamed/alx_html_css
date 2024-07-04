@@ -1,0 +1,152 @@
+/* ============================ start global styles =============================== */
+*{
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,blockquote{
+margin: 0;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.headphone_btn{
+    border-radius: 20px;
+    border: 0;
+    background-color: #FF6565;
+    cursor: pointer;
+    color: #fff;
+    padding: 13px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.headphone_btn:hover{
+    opacity: 0.9
+}
+/* ============================ end global styles =============================== */
+
+/* ============================ start header styles =============================== */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img{
+    width: 161px;
+}
+header .logo #openNav{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+header nav a{
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+    transition: all 0.5s;
+}
+header nav a:hover{
+    color: #FF6565;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    header{
+        max-width: 633px;
+    }
+}
+
+@media (max-width: 767px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-inline: 21px;
+    }
+    header .logo #openNav{
+        display: block;
+        left: 21px;
+    }
+        
+    header nav {
+        flex-direction: column;
+        margin-top: 20px;
+        display: none;
+    }
+}
+/* ============================ end header styles =============================== */
+/* ============================ start banner sectoin "banner" styles =============================== */
+.banner{
+        background: url("./images/headphones_hero_1.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+.banner .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.banner .container h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-block:20px 5px;
+}
+.banner .container p:first-child{
+    font-size: 16px;
+    font-weight: bold;
+}
+.banner .container button.headphone_btn{
+    margin-block: 40px 65px;
+}
+.banner .container p:last-child{
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 637px;
+    line-height: 26px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner{
+        background-position-x: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner{
+        padding-inline: 21px;
+        background-position-x: center;
+    }
+}
+/* ============================ end banner sectoin "banner" styles =============================== */
