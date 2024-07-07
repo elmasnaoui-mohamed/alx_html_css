@@ -243,3 +243,68 @@ header nav a:hover{
     }
 }
 /* ============================ end sectoin "What we do" styles =============================== */
+/* ============================ start sectoin "Our results" styles =============================== */
+.our_results {
+    padding-block: 110px;
+    background-image: url("./images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.our_results h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 68px;
+    text-align: center;
+}
+.our_results p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    max-width: 637px;
+    line-height: 26px;
+    margin: 0 auto 97px;
+}
+.our_results .our_results_cards_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 58px;
+}
+.our_results .our_results_cards_container .our_results_card{
+    width: 190px;
+    height: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("./images/pentagone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.our_results .our_results_cards_container .our_results_card h1{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.our_results .our_results_cards_container .our_results_card span{
+    font-size: 14px;
+    font-weight: 400;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .our_results{
+        padding-inline: 66px;
+        background-position-x: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .our_results{
+        padding-inline: 25px;
+        background-position-x: center;
+    }
+}
+/* ============================ end sectoin "Our results" styles =============================== */
