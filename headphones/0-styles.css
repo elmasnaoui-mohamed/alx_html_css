@@ -55,19 +55,51 @@ header{
 header .logo img{
     width: 161px;
 }
-header .logo #openNav{
+header #openNav,
+header .openNav{
     display: none;
     position: absolute;
     left: 0;
     top: 35px;
     cursor: pointer;
+    width: 20px;
+    height: 14px;
+    z-index: 8;
+}
+header #openNav{
+    margin: 0;
+    visibility: hidden;
+    z-index: 9;
+}
+header .openNav span{
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 2px;
+    transition: all 0.5s;
+}
+header .openNav span:nth-child(2){
+    width: 13px;
+    margin-block: 4px;
+}
+#openNav:checked + .openNav span:nth-child(2){
+    opacity: 0;
+}
+#openNav:checked + .openNav span:first-child {
+    transform: rotate(45deg);
+    margin-bottom: -6px;
+}
+#openNav:checked + .openNav span:last-child {
+    transform: rotate(-45deg);
+    margin-top: -6px;
 }
 
 header nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 30px;
 }
 header nav a{
     font-weight: 700;
@@ -91,15 +123,20 @@ header nav a:hover{
         justify-content: flex-start;
         padding-inline: 21px;
     }
-    header .logo #openNav{
-        display: block;
+    header #openNav,
+    header .openNav{
+        display: flex;
         left: 21px;
+        flex-direction: column;
+        justify-content: center;
     }
-        
     header nav {
+        display: none;
         flex-direction: column;
         margin-top: 20px;
-        display: none;
+    }
+    #openNav:checked ~ nav {
+        display: flex;
     }
 }
 /* ============================ end header styles =============================== */
