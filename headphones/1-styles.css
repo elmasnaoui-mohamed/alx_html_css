@@ -187,3 +187,53 @@ header nav a:hover{
     }
 }
 /* ============================ end banner sectoin "banner" styles =============================== */
+/* ============================ start sectoin "What we do" styles =============================== */
+.what_we_do {
+    padding-block: 190px 110px;
+}
+.what_we_do p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #071629;
+    text-align: center;
+    max-width: 637px;
+    line-height: 26px;
+    margin: 0 auto 97px;
+}
+.what_we_do .what_we_do_cards_container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 58px;
+}
+.what_we_do .what_we_do_cards_container .what_we_do_card{
+    width: 180px;
+    height: 207px;
+    text-align: center;
+}
+.what_we_do .what_we_do_cards_container .what_we_do_card i{
+    color: #FF6565;
+    font-size: 65px;
+    display: block;
+    margin-bottom: 62px;
+}
+.what_we_do .what_we_do_cards_container .what_we_do_card span{
+    color: #071629;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .what_we_do{
+        padding-inline: 66px;
+    }
+}
+
+@media (max-width: 767px) {
+    .what_we_do{
+        padding-inline: 25px;
+    }
+}
+/* ============================ end sectoin "What we do" styles =============================== */
